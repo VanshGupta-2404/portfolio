@@ -23,7 +23,7 @@ export const Hero: React.FC<{
                     transition={{ duration: 0.8 }}
                 >
                     <h2 className="text-neon-cyan font-mono text-lg md:text-xl mb-4 tracking-widest uppercase">
-                        Vansh Gupta
+                        {name}
                     </h2>
                     <h1 className="text-5xl md:text-8xl font-bold font-heading mb-6 tracking-tight">
                         Product <span className="text-gradient">Engineer</span>
