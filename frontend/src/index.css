@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+  --color-neon-cyan: #00f3ff;
+  --color-electric-purple: #9d00ff;
+  --color-deep-space: #050505;
+  --color-glass: rgba(255, 255, 255, 0.05);
+
+  --font-heading: 'Outfit', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+:root {
+  background-color: var(--color-deep-space);
+  color: white;
+  font-family: var(--font-body);
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, var(--color-neon-cyan), var(--color-electric-purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.glass-card {
+  background: var(--color-glass);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+}
+
+.glow-shadow {
+  box-shadow: 0 0 40px rgba(0, 243, 255, 0.15);
+}
